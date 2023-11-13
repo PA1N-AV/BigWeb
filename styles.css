@@ -1,0 +1,44 @@
+body{
+	background: linear-gradient(to bottom, #a0a0a0, #fafafa, #a0a0a0);
+	padding: 0;
+	margin:0 ;
+	height: 100vh;
+}
+
+.image-container{
+        display: flex;
+	overflow: hidden;
+	justify-content: center; /* Center the content horizontally */
+        align-items: center;
+	height: 100px;
+	width: auto;
+	
+}
+.wiki img {
+        margin-right: 10px;
+	height:50px;
+	width: 50px;
+	border-radius: 20%;
+	transition: transform 0.3s ease-in-out;
+}
+
+.wiki:hover img {	
+	transform: scale(2);
+        
+	
+}
+
+
+.main_img{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: 50px;
+	border-radius:50%;
+}
+
+.central_text{
+	color: black;
+	font-family: "Comic Sans MS", cursive;
+	text-align: center;
+}
