@@ -30,8 +30,11 @@ body{
 	
 }
 
+.sussy{
+    position: relative;
+}
 
-.main_img img{
+.main_img{
 	display: flex;
 	margin-right: auto;
 	vertical-align: 50px;
@@ -46,7 +49,9 @@ body{
 .central_text{
 	color: black;
 	font-family: "Comic Sans MS", cursive;
-	text-align: center;
+	position: absolute;
+	bottom: 346px;
+	mix-blend-mode: multiply;
 }
 
 .box{
