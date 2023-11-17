@@ -1,3 +1,11 @@
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
 	background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 	padding: 0;
@@ -6,11 +14,65 @@ body{
 }
 header{
     position: fixed;
+    display:flex;
     top:0;
     left:0;
     width: 100%;
     padding: 20px 100px;
-    background: cyan;
+    z-index:99;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wise-text{
+    font-size: 2em;
+    color: white;
+    user-select:none;
+}
+
+.top-nav a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.top-nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: 22px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.top-nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.top-nav .githuburl{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.top-nav .githuburl:hover{
+    background: #fff;
+    color: black;
 }
 
 .image-container{
@@ -38,7 +100,7 @@ header{
 	
 }
 
-.sussy{
+/*.sussy{
     position: relative;
 }
 
@@ -53,21 +115,20 @@ header{
 	border: 2px;
 	border-style:inset;
     border-color:rgb(200,200,200);
-}
+}*/
 
-.central_text{
+/*.central_text{
 	color: black;
 	display: flow-root;
 	font-family: "Comic Sans MS", cursive;
 	position: absolute;
 	bottom: 346px;
 	mix-blend-mode: multiply;
-}
+}*/
 
-.box{
+/*.box{
     position: relative;
-    display:flex;
-    top:0px;
+    top:500px;
     margin-right: auto;
     margin-left: auto;
     width: 300px;
@@ -81,4 +142,4 @@ header{
     border: rgb(170,170,170) 10px inset;
     background-clip: content-box;
 
-}
+}*/
