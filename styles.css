@@ -27,6 +27,7 @@ section{
 
 .home-content{
     max-width: 60rem;
+    z-index: 3;
 }
 
 .home-content h1{
@@ -40,6 +41,12 @@ section{
 .home-image{
     position: fixed;
     right: 20%;
+    bottom: 0%;
+    z-index: 2;
+    -webkit-filter: drop-shadow(0px 0px 0 black)
+                    drop-shadow(0px 0px 0 black);
+    filter: drop-shadow(10px 10px 10px black)
+            drop-shadow(0px -0px 0 black);
 }
 
 
@@ -53,6 +60,14 @@ header{
     z-index:4;
     justify-content: space-between;
     align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 80px;
+    width: 100%;
+    color: rgba(255, 255, 255, .1);
 }
 
 .wise-text{
