@@ -1,41 +1,81 @@
 <!DOCTYPE = html>
 
-<html>
+<html lang = "ru">
 
 <head>
-	<meta charset= "udp-8">
+	<meta charset= "utf-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 	<title>Big boy</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-<div class = "Blend-text">
+		<header>
+			<h2 class = "wise-text">Wise-Text</h2>
+			<nav class = "top-nav">
+				<a class = "Not-CoolButton" href = "#">Num1</a>
+				<a class = "Not-CoolButton" href = "#">Num2</a>
+				<a class = "Not-CoolButton" href = "#">Num3</a>
+				<a class = "fancy-button" href = "https://github.com/PA1N-AV/BigWeb" target="_blank">GitHub</a>
+			</nav>
+		</header>
 
-</div>
-	<div class = "sussy">
-		<img class = "main_img" src="CherI.jpg" alt="Churchill" width="400" height="500">
-		<div class = "central_text">
-			<h1> Big Цитата </h1>
-			<h3> Big кактус - завжди буде big Кактус </h3>
-			<p> Big Churchill </p>
+		<section class = "home" id = "home">
+			<div class = "home-content">
+				<h1><span>Вінстон Черчіль</span></h1>
+				<div class = "text-animate">
+					"Ми живемо в епоху великих подій і маленьких людей"
+				</div>
+			</div>
+		</section>
+
+		<div class = "home-image">
+			<img src = "Churchill.png" alt = "Big Boy">
 		</div>
-	</div>
-<div class = "box">
-<div class = "image-container">
-	<div class = "wiki">
-		<a href="https://ru.wikipedia.org/wiki/" target = "_blank" ><img src="CherI.jpg" alt="Chuchill"></a>
-	</div>
 
-	<div class = "wiki">
-		<a href=""><img src="TankI.jpg" alt="Chuchill"></a>
-	</div>
-
-	<div class = "wiki">
-		<a href="https://github.com/PA1N-AV/BigWeb"><img src="GitHub.png" alt="CODE"></a>
-	</div>
-</div>
-</div>
-
+		<div class = "sidebar">
+			<div class = "logo-content">
+				<div class = "logo">
+					<i class='bx bx-child'></i>
+					<h3>Big-ass</h3>
+				</div>
+				<i class='bx bx-menu' id = "btn"></i>
+			</div>
+			<ul class = "list">
+				<!--<li class = "search">
+						<i class='bx bxs-color'></i>  Поле для пошуку інфи(воно не потрібне, просто для тесту)
+						<input type = "text" placeholder="Search...">
+				</li>-->
+				<li class = "list-item">
+				<a href = "#">
+					<i class='bx bxl-wikipedia'></i>
+					<span class = "links-name">Wikipedia</span>
+				</a>
+				</li>
+				<li class = "list-item">
+					<a href = "#">
+						<i class='bx bx-child'></i>
+						<span class = "links-name">Test-link</span>
+					</a>
+				</li>
+				<li class = "list-item">
+					<a href = "#">
+						<i class='bx bx-child'></i>
+						<span class = "links-name">Test-link</span>
+					</a>
+				</li>
+			</ul>
+			<ul class = "list-github">
+				<li>
+					<a href = "https://github.com/PA1N-AV/BigWeb">
+						<i class='bx bxl-github'></i>
+						<span class = "links-name">GitHub</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="script.js"></script>
 </body>
 
 </html>
